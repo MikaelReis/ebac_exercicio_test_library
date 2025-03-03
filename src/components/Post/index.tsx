@@ -9,6 +9,7 @@ type Props = {
 }
 
 const Post = ({ children, imageUrl }: Props) => (
+    // eslint-disable-next-line react/jsx-no-comment-textnodes
     <div className={styles.post}>
         <img className={styles['post-image']} src={imageUrl} />
         <p className={styles['post-text']}> {children} </p>
